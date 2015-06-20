@@ -6,6 +6,7 @@ router.get('/:id', function (req, res, next) {
     res.send(objects[+(req.params.id)]);
 });
 router.get('/msg/:id', function (req, res, next) {
+    console.log(req.body);
     res.send(objects[+(req.params.id)].messages);
 });
 
